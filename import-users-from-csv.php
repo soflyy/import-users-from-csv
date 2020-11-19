@@ -314,7 +314,7 @@ class IS_IU_Import_Users {
 			$first = true;
 			$rkey = 0;
 			while ( ( $line = $csv_reader->get_row() ) !== NULL ) {
-				if ( empty( $line ) ) {
+				if ( empty( $line ) || empty( array_filter( $line ) ) ) {
 					if ( $first ){
 						/* If the first line is empty, abort */
 						break;
