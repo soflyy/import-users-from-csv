@@ -240,7 +240,12 @@ class IS_IU_Import_Users {
 				<?php do_action('is_iu_import_page_after_table'); ?>
 			</form>
 		<?php
+
+		include 'includes/notice.php';	
+
 	}
+
+
 
 	/**
 	 * Import a csv file
