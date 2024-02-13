@@ -224,18 +224,20 @@ class IS_IU_Import_Users {
 									<?php _e( 'Update user when a username or email exists', 'import-users-from-csv' ) ;?>
 								</label>
 							</fieldset>
+						</td>					
+					</tr>
+					<tr valign="top">
+						<td scope="row">
+							<p class="submit">
+							 	<input type="submit" class="button-primary" value="<?php _e( 'Import' , 'import-users-from-csv'); ?>" />
+							</p>
 						</td>
 					</tr>
-
 					<?php do_action('is_iu_import_page_inside_table_bottom'); ?>
 
 				</table>
 
 				<?php do_action('is_iu_import_page_after_table'); ?>
-
-				<p class="submit">
-				 	<input type="submit" class="button-primary" value="<?php _e( 'Import' , 'import-users-from-csv'); ?>" />
-				</p>
 			</form>
 		<?php
 	}
