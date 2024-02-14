@@ -39,6 +39,16 @@ if ( ! defined( 'IS_IU_CSV_DELIMITER' ) ){
 }
 
 /**
+* TODO
+* - Find the JS driving the tabs
+* - Move all files to local
+* - Stop the CSS from leaking out of the notice
+* - Clean the HTML, CSS, and JS
+* - Make sure it conforms to WP coding standards
+**/
+
+
+/**
  * Main plugin class
  *
  * @since 0.1
@@ -55,6 +65,7 @@ class IS_IU_Import_Users {
 	public static function init() {
 		add_action( 'admin_menu', array( __CLASS__, 'add_admin_pages' ) );
 		add_action( 'init', array( __CLASS__, 'process_csv' ) );
+		add_action( 'admin_enqueue_scripts', array( __CLASS__, 'enqueue_assets' ) );
 
 		$upload_dir = wp_upload_dir();
 		self::$log_dir_path = trailingslashit( $upload_dir['basedir'] );
@@ -66,6 +77,13 @@ class IS_IU_Import_Users {
 
 		do_action('is_iu_after_init');
 	}
+
+	public static function enqueue_assets($hook) {
+        if( 'users_page_import-users-from-csv' !== $hook ) {
+            return;
+        }
+        wp_enqueue_style( 'import-users-from-csv-css', plugin_dir_url( __FILE__ ) . 'includes/notice.css' );
+    }
 
 	/**
 	 * Add administration menus
@@ -241,11 +259,9 @@ class IS_IU_Import_Users {
 			</form>
 		<?php
 
-		include 'includes/notice.php';	
+		include 'includes/notice.html';
 
 	}
-
-
 
 	/**
 	 * Import a csv file
