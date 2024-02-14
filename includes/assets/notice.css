@@ -1,3 +1,18 @@
+#wpcontent, #wpbody-content {
+    padding: 0;
+}
+
+.wrap {
+    margin: 0;
+    padding: 20px;
+    background-color: #f9fafc;
+}
+
+#notice {
+    padding-top: 200px;
+    background-color: #f9fafc;
+}
+
 #div_block-751-2991179{
     height:0;
     padding-top:0;
@@ -483,15 +498,6 @@
     text-align:center;
     max-width:850px
 }
-#headline-160-2991231{
-    useCustomTag:true
-}
-#headline-166-2991231{
-    useCustomTag:true
-}
-#headline-172-2991231{
-    useCustomTag:true
-}
 #headline-177-2991231{
     text-align:center;
     margin-bottom:34px
@@ -540,18 +546,6 @@
     #text_block-24-2991231{
         text-align:left
     }
-}
-#link-66-2991231{
-    attr-5ed86642283ff:lightbox
-}
-#link-94-2991231{
-    attr-5ed86642283ff:lightbox
-}
-#link-122-2991231{
-    attr-5ed86642283ff:lightbox
-}
-#link-150-2991231{
-    attr-5ed86642283ff:lightbox
 }
 #image-34-2991231{
     height:47px
@@ -684,13 +678,13 @@
         box-shadow:0 0 0 0 rgba(2,179,182,0)
     }
 }
-h1{
+#notice h1{
     line-height:1.2em
 }
-h2,h3,h4,h5,h6{
+#notice h2,#notice h3,#notice h4,#notice h5,#notice h6{
     line-height:1.3em
 }
-h3,h4,h5,h6{
+#notice h3,#notice h4,#notice h5,#notice h6{
     margin-bottom:.7em
 }
 @media screen and (max-width:767px){
@@ -731,18 +725,7 @@ body{
     padding-left:2em;
     background-repeat:no-repeat!important
 }
-.check-icon-list li{
-    background:url(/wp-content/uploads/2019/07/check-alt.svg) left .3em;
-    background-size:1.2em;
-    margin-bottom:8px
-}
-.icon-list li.grey-x{
-    background:url(/wp-content/uploads/2021/03/grey-x.svg) left .3em;
-    background-repeat:repeat;
-    background-size:auto;
-    background-size:1.2em;
-    color:#9ba4ab
-}
+
 .icon-list.icon-list--compact li{
     padding-left:1.6em
 }
@@ -839,9 +822,6 @@ img{
 svg:not(:root){
     overflow:hidden
 }
-[type=reset],[type=submit],html [type=button]{
-    -webkit-appearance:button
-}
 [type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{
     border-style:none;
     padding:0
@@ -851,10 +831,6 @@ svg:not(:root){
 }
 [type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{
     height:auto
-}
-[type=search]{
-    -webkit-appearance:textfield;
-    outline-offset:-2px
 }
 [type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{
     -webkit-appearance:none
@@ -1149,51 +1125,47 @@ div.ct-svg-icon>svg{
 .ct-section-inner-wrap{
     max-width:1120px
 }
-body{
-    font-family:Graphik
-}
-body{
+#notice {
     line-height:1.75;
     font-size:16px;
     font-weight:400;
     color:#02182b
 }
-h1,h2,h3,h4,h5,h6{
-    font-family:'Circular Std';
+#notice h1,#notice h2,#notice h3,#notice h4,#notice h5,#notice h6{
     font-size:55px;
     font-weight:900;
     color:#02182b
 }
-h2,h3,h4,h5,h6{
+#notice h2,#notice h3,#notice h4,#notice h5,#notice h6{
     font-size:40px;
     font-weight:900;
     color:#02182b
 }
-h3,h4,h5,h6{
+#notice h3,#notice h4,#notice h5,#notice h6{
     font-size:30px;
     font-weight:900;
     color:#02182b
 }
-h4,h5,h6{
+#notice h4,#notice h5,#notice h6{
     font-size:21px;
     font-weight:900;
     color:#02182b
 }
-h5,h6{
+#notice h5,#notice h6{
     font-size:18px;
     font-weight:900;
     color:#02182b
 }
-h6{
+#notice h6{
     font-size:16px
 }
-a{
+#notice a{
     color:#02182b;
     font-weight:600;
-    text-decoration:underline
+    text-decoration:none;
 }
-a:hover{
-    text-decoration:none
+#notice a:hover{
+    text-decoration:none;
 }
 .ct-link{
     font-weight:600
@@ -1261,7 +1233,6 @@ a:hover{
     width:100%
 }
 .hero-subheading{
-    font-family:Graphik;
     margin-top:30px;
     z-index:1;
     font-size:25px;
@@ -1291,7 +1262,6 @@ a:hover{
     align-items:center
 }
 .cta-link-text{
-    font-family:Graphik;
     font-weight:500;
     text-decoration:none
 }
@@ -1443,7 +1413,6 @@ a:hover{
     }
 }
 .pricing-box-price{
-    font-family:Circular Std;
     font-weight:900;
     font-size:43px
 }
@@ -1752,7 +1721,6 @@ a:hover{
     }
 }
 .icon-box-title{
-    font-family:Circular Std;
     text-align:center;
     font-size:21px;
     margin-bottom:0;
@@ -1839,7 +1807,6 @@ a:hover{
     max-width:50px
 }
 .icon-box-horizontal-title{
-    font-family:Circular Std;
     text-align:left;
     margin-bottom:0;
     font-weight:900;

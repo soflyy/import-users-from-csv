@@ -40,10 +40,11 @@ if ( ! defined( 'IS_IU_CSV_DELIMITER' ) ){
 
 /**
 * TODO
-* - Find the JS driving the tabs
-* - Move all files to local
-* - Stop the CSS from leaking out of the notice
-* - Clean the HTML, CSS, and JS
+* X Move all files to local
+* X Fix all links
+* X Stop the CSS from leaking out of the notice
+* - Clean the HTML and CSS, remove WP footer
+* - Edit content
 * - Make sure it conforms to WP coding standards
 **/
 
@@ -62,6 +63,7 @@ class IS_IU_Import_Users {
 	 *
 	 * @since 0.1
 	 **/
+	
 	public static function init() {
 		add_action( 'admin_menu', array( __CLASS__, 'add_admin_pages' ) );
 		add_action( 'init', array( __CLASS__, 'process_csv' ) );
@@ -82,7 +84,7 @@ class IS_IU_Import_Users {
         if( 'users_page_import-users-from-csv' !== $hook ) {
             return;
         }
-        wp_enqueue_style( 'import-users-from-csv-css', plugin_dir_url( __FILE__ ) . 'includes/notice.css' );
+        wp_enqueue_style( 'import-users-from-csv-css', plugin_dir_url( __FILE__ ) . 'includes/assets/notice.css' );
     }
 
 	/**
@@ -197,7 +199,7 @@ class IS_IU_Import_Users {
 
 				<?php do_action('is_iu_import_page_before_table'); ?>
 
-				<table class="form-table widefat wp-list-table" style='padding: 5px;'>
+				<table class="form-table widefat wp-list-table">
 					<?php do_action('is_iu_import_page_inside_table_top'); ?>
 					<tr valign="top">
 						<td scope="row">
@@ -257,9 +259,10 @@ class IS_IU_Import_Users {
 
 				<?php do_action('is_iu_import_page_after_table'); ?>
 			</form>
+		</div>
 		<?php
 
-		include 'includes/notice.html';
+		include 'includes/notice.php';
 
 	}
 
