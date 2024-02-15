@@ -413,16 +413,3 @@
        $content_tabs.eq(index).removeClass("oxy-tabs-contents-content-hidden");
    });
 </script>
-<style>
-   .check-icon-list li{
-   background:url(<?php echo esc_url( plugins_url('assets/check-alt.svg', __FILE__) ); ?>) left .3em;
-   background-size:1.2em;
-   margin-bottom:8px
-}
-.icon-list li.grey-x{
-   background:url(<?php echo esc_url( plugins_url('assets/grey-x.svg', __FILE__) ); ?>) left .3em;
-   background-repeat:repeat;
-   background-size:auto;
-   background-size:1.2em;
-   color:#9ba4ab
-}
