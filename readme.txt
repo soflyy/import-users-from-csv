@@ -1,12 +1,13 @@
 === Import Users from CSV ===
-Contributors: sorich87, andrewza, paidmembershipspro
-Tags: user, users, csv, batch, import, importer, admin
+Contributors: soflyy, wpallimport, sorich87, andrewza, paidmembershipspro
+Tags: import users from csv, import users, import csv, users, csv
 Requires at least: 3.1
 Requires PHP: 5.6
-Tested up to: 6.1
-Stable tag: 1.1
-Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=4GC4JEZH7KSKL
+Tested up to: 6.4
+Stable tag: 1.2
 License: GPLv2 or later
+Author: WP All Import
+Author URI: https://www.wpallimport.com/
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 
@@ -18,7 +19,27 @@ This plugin allows you to import users from an uploaded CSV file. It will add us
 
 You can also choose to send a notification to the new users and to display password nag on user login.
 
-[Check out my other free plugins.](https://profiles.wordpress.org/users/andrewza/)
+[Check out our other free plugins.](https://profiles.wordpress.org/wpallimport/#content-plugins)
+
+= Import Users From Any CSV/Excel/XML with WP All Import Pro =
+[youtube https://www.youtube.com/watch?v=OrMzPw0p-EU /]
+
+**WP All Import Pro** can import WordPress users, WooCommerce products, ACF, custom post types, custom fields, taxonomies, and everything else:
+
+* **Drag & Drop to Import Any File:** Give any CSV or XML to WP All Import, then drag and drop to map data from your file into WordPress.
+* **Any Custom Post Type, Every Data Type:** Import data to custom post types, with support for WooCommerce, ACF, custom fields, taxonomies, and everything else.
+* **Import Images & Galleries:** Images can be uploaded, downloaded, or matched to media already in WordPress. Full support for WooCommerce product images and variation galleries.
+* **Import Files from URL:** Download and import files from external websites, even if they are password protected. URL imports are can be re-run to add, edit, and delete posts.
+* **Scheduled Imports:** WP All Import Pro can check periodically check a file for updates and then add, update, or delete to the imported posts accordingly.
+* **Developer Friendly:** Pass data through custom PHP functions. For example, use something like [my_function( {user_email[1]} )] in your template, to pass the value of {user_email[1]} to my_function and display whatever it returns.
+* **Priority Support:** Personal support from our team of expert developers with over a decade of experience importing and exporting WordPress data.
+* **90 Day Money Back Guarantee:** Not 100% happy? Let us know, and we’ll promptly send you a refund. No questions asked.
+
+Check out [WP All Import](https://www.wpallimport.com/?utm_source=import-plugin-free&utm_medium=readme&utm_campaign=upgrade-to-pro) today.
+
+* **[Import users with WP All Import Pro](https://www.wpallimport.com/import-wordpress-users/?utm_source=import-plugin-free&utm_medium=readme&utm_campaign=upgrade-to-pro).**
+* Need to [import XML and CSV to WooCommerce](http://www.wpallimport.com/woocommerce-product-import/?utm_source=import-plugin-free&utm_medium=readme&utm_campaign=upgrade-to-pro)? Check out our WooCommerce add-on.
+* How to export WordPress users? Drag & drop to [export WordPress users](http://www.wpallimport.com/export-wordpress/?utm_source=import-plugin-free&utm_medium=readme&utm_campaign=upgrade-to-pro) (and everything else) to a custom CSV, Excel, or XML with WP All Export Pro.
 
 = Features =
 
@@ -30,7 +51,7 @@ You can also choose to send a notification to the new users and to display passw
 * Shows password nag on user login (if the option is selected)
 
 For feature request and bug reports, [please use the forums](https://wordpress.org/support/plugin/import-users-from-csv).
-Code contributions are welcome [on Github](https://github.com/andrewlimaza/import-users-from-csv).
+Code contributions are welcome [on Github](https://github.com/soflyy/import-users-from-csv/).
 
 == Installation ==
 
@@ -61,9 +82,11 @@ To upload the plugin through WordPress, instead of FTP:
 Click on the 'Import From CSV' link in the 'Users' menu, choose your CSV file, choose if you want to send a notification email to new users and if you want the password nag to be displayed when they login, then click 'Import'.
 
 Each row in your CSV file should represent a user; each column identifies user data or meta data.
+
 If a column name matches a field in the user table, data from this column is imported in that field; if not, data is imported in a user meta field with the name of the column.
 
 Look at the example.csv file in the plugin directory to have a better understanding of how the your CSV file should be organized.
+
 You can try importing that file and look at the result.
 
 = Credits =
@@ -74,6 +97,11 @@ Thanks to Ulrich Sossou for initially creating this plugin. Be sure to [check ou
 1. User import screen
 
 == Changelog ==
+
+= 1.2 =
+* BUG FIX: Ensure user running import has the ability to add users
+* Update tested to
+
 = 1.1 =
 * ENHANCEMENT: Added support for WPCLI (@mircobabini)
 * ENHANCEMENT: Added support for multiple roles during import, use comma-separated value for multiple roles (@mircobabini)

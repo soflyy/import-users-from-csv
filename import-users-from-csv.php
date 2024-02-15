@@ -39,17 +39,6 @@ if ( ! defined( 'IS_IU_CSV_DELIMITER' ) ){
 }
 
 /**
-* TODO
-* X Move all files to local
-* X Fix all links
-* X Stop the CSS from leaking out of the notice
-* - Clean the HTML and CSS, remove WP footer
-* - Edit content
-* - Make sure it conforms to WP coding standards
-**/
-
-
-/**
  * Main plugin class
  *
  * @since 0.1

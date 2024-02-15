@@ -14,8 +14,8 @@
          <h2 class="ct-headline">Import Users from any CSV, Excel, or XML</h2>
          <div id="text_block-24-2991231" class="ct-text-block section-subheading">Drag &amp; drop to import users, WooCommerce products, ACF and everything else.</div>
          <div class="cta-header-link-wrap">
-            <a id="link-162-10" class="ct-link cta-link" href="https://www.wpallimport.com/try/" target="_self">
-               <div id="text_block-163-10" class="ct-text-block cta-link-text">Try Now<br></div>
+            <a id="link-162-10" class="ct-link cta-link" href="https://www.youtube.com/watch?v=OrMzPw0p-EU" target="_blank">
+               <div id="text_block-163-10" class="ct-text-block cta-link-text">Watch<br></div>
                <div id="code_block-692-2991179" class="ct-code-block cta-link-arrow">
                   <svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                      <title>Arrow</title>
@@ -24,8 +24,28 @@
                   </svg>
                </div>
             </a>
-            <a id="link-162-10" class="ct-link cta-link" href="https://www.wpallimport.com/import-wordpress-users/" target="_self">
+            <a id="link-162-10" class="ct-link cta-link" href="https://www.wpallimport.com/documentation/how-to-import-wordpress-users-from-csv-excel-or-xml/" target="_blank">
+               <div id="text_block-163-10" class="ct-text-block cta-link-text">Docs<br></div>
+               <div id="code_block-692-2991179" class="ct-code-block cta-link-arrow">
+                  <svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <title>Arrow</title>
+                     <path d="M8 1.5L12 5.5L8 9.5" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                     <path d="M11.5 5.5H1" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"></path>
+                  </svg>
+               </div>
+            </a>
+            <a id="link-162-10" class="ct-link cta-link" href="https://www.wpallimport.com/import-wordpress-users/" target="_blank">
                <div id="text_block-163-10" class="ct-text-block cta-link-text">Learn More<br></div>
+               <div id="code_block-692-2991179" class="ct-code-block cta-link-arrow">
+                  <svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <title>Arrow</title>
+                     <path d="M8 1.5L12 5.5L8 9.5" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                     <path d="M11.5 5.5H1" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"></path>
+                  </svg>
+               </div>
+            </a>
+            <a id="link-162-10" class="ct-link cta-link" href="https://www.wpallimport.com/try/" target="_blank">
+               <div id="text_block-163-10" class="ct-text-block cta-link-text">Try For Free<br></div>
                <div id="code_block-692-2991179" class="ct-code-block cta-link-arrow">
                   <svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                      <title>Arrow</title>
@@ -121,7 +141,7 @@
                            "
                            sizes="(max-width: 1000px) 100vw, 1000px"
                            />
-                        <a id="link-66-2991231" class="ct-link horizontal-tabs-2-play-btn" href="https://www.youtube.com/watch?v=micwcaIKnZc" target="_self">
+                        <a id="link-66-2991231" class="ct-link horizontal-tabs-2-play-btn" href="https://www.youtube.com/watch?v=M2NUPXxl-_8" target="_blank">
                            <div id="text_block-67-2991231" class="ct-text-block horizontal-tabs-2-play-btn-text">Watch</div>
                            <img
                               id="image-68-2991231"
@@ -187,12 +207,12 @@
                            "
                            sizes="(max-width: 1000px) 100vw, 1000px"
                            />
-                        <a id="link-94-2991231" class="ct-link horizontal-tabs-2-play-btn" href="https://www.youtube.com/watch?v=a-z0R-Ldkqo" target="_self">
+                        <a id="link-94-2991231" class="ct-link horizontal-tabs-2-play-btn" href="https://www.youtube.com/watch?v=99huiSi-8DQ" target="_blank">
                            <div id="text_block-95-2991231" class="ct-text-block horizontal-tabs-2-play-btn-text">Watch</div>
                            <img
                               id="image-96-2991231"
                               alt=""
-                              src="<?php echo esc_url( plugins_url('assets/teal_play_icon.svg', __FILE__) ); ?>
+                              src="<?php echo esc_url( plugins_url('assets/teal_play_icon.svg', __FILE__) ); ?>"
                               class="ct-image horizontal-tabs-2-play-btn-icon"
                               srcset=""
                               sizes="(max-width: 28px) 100vw, 28px"
@@ -253,7 +273,7 @@
                            "
                            sizes="(max-width: 1000px) 100vw, 1000px"
                            />
-                        <a id="link-122-2991231" class="ct-link horizontal-tabs-2-play-btn" href="https://www.youtube.com/watch?v=NV2-0Q5UeLw" target="_self">
+                        <a id="link-122-2991231" class="ct-link horizontal-tabs-2-play-btn" href="https://www.youtube.com/watch?v=SF-vxfvfWdU" target="_blank">
                            <div id="text_block-123-2991231" class="ct-text-block horizontal-tabs-2-play-btn-text">Watch</div>
                            <img
                               id="image-124-2991231"
@@ -319,7 +339,7 @@
                            "
                            sizes="(max-width: 1000px) 100vw, 1000px"
                            />
-                        <a id="link-150-2991231" class="ct-link horizontal-tabs-2-play-btn" href="https://www.youtube.com/watch?v=WDBpL1X-MVM" target="_self">
+                        <a id="link-150-2991231" class="ct-link horizontal-tabs-2-play-btn" href="https://www.youtube.com/watch?v=GH-ImZm1I_s" target="_blank">
                            <div id="text_block-151-2991231" class="ct-text-block horizontal-tabs-2-play-btn-text">Watch</div>
                            <img
                               id="image-152-2991231"
@@ -378,19 +398,6 @@
    </section>
 </div>
 <script type="text/javascript">
-   jQuery(document).ready(function () {
-       let event = new Event("oxygenVSBInitTabsJs");
-       document.dispatchEvent(event);
-   });
-   
-   document.addEventListener(
-       "oxygenVSBInitTabsJs",
-       function () {
-           oxygenVSBInitTabs();
-       },
-       false
-   );
-   
    jQuery("body").on("click", ".oxy-tabs-wrapper > div", function (e) {
        clicked_tab = jQuery(e.target).closest(".oxy-tabs-wrapper > div");
        index = clicked_tab.index();
