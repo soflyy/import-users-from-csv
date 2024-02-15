@@ -2,8 +2,8 @@
 Contributors: soflyy, wpallimport, sorich87, andrewza, paidmembershipspro
 Tags: import users from csv, import users, import csv, users, csv
 Requires at least: 3.1
-Requires PHP: 5.6
-Tested up to: 6.4
+Requires PHP: 7.0
+Tested up to: 6.4.2
 Stable tag: 1.2
 License: GPLv2 or later
 Author: WP All Import
