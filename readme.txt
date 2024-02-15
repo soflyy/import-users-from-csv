@@ -21,6 +21,18 @@ You can also choose to send a notification to the new users and to display passw
 
 [Check out our other free plugins.](https://profiles.wordpress.org/wpallimport/#content-plugins)
 
+= Features =
+
+* Imports all users fields
+* Imports user meta
+* Update existing users by specifying ID field
+* Allows setting user role
+* Sends new user notification (if the option is selected)
+* Shows password nag on user login (if the option is selected)
+
+For feature request and bug reports, [please use the forums](https://wordpress.org/support/plugin/import-users-from-csv).
+Code contributions are welcome [on Github](https://github.com/soflyy/import-users-from-csv/).
+
 = Import Users From Any CSV/Excel/XML with WP All Import Pro =
 [youtube https://www.youtube.com/watch?v=OrMzPw0p-EU /]
 
@@ -40,18 +52,6 @@ Check out [WP All Import](https://www.wpallimport.com/?utm_source=import-plugin-
 * **[Import users with WP All Import Pro](https://www.wpallimport.com/import-wordpress-users/?utm_source=import-plugin-free&utm_medium=readme&utm_campaign=upgrade-to-pro).**
 * Need to [import XML and CSV to WooCommerce](http://www.wpallimport.com/woocommerce-product-import/?utm_source=import-plugin-free&utm_medium=readme&utm_campaign=upgrade-to-pro)? Check out our WooCommerce add-on.
 * How to export WordPress users? Drag & drop to [export WordPress users](http://www.wpallimport.com/export-wordpress/?utm_source=import-plugin-free&utm_medium=readme&utm_campaign=upgrade-to-pro) (and everything else) to a custom CSV, Excel, or XML with WP All Export Pro.
-
-= Features =
-
-* Imports all users fields
-* Imports user meta
-* Update existing users by specifying ID field
-* Allows setting user role
-* Sends new user notification (if the option is selected)
-* Shows password nag on user login (if the option is selected)
-
-For feature request and bug reports, [please use the forums](https://wordpress.org/support/plugin/import-users-from-csv).
-Code contributions are welcome [on Github](https://github.com/soflyy/import-users-from-csv/).
 
 == Installation ==
 
