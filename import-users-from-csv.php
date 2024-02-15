@@ -136,7 +136,7 @@ class IS_IU_Import_Users {
 		?>
 
 		<div class="wrap">
-			<h2><?php _e( 'Import users from a CSV file' , 'import-users-from-csv'); ?></h2>
+			<h2><?php _e( 'Import Users from CSV' , 'import-users-from-csv'); ?></h2>
 			<?php
 				$error_log_file = self::$log_dir_path . 'is_iu_errors.log';
 				$error_log_url  = self::$log_dir_url . 'is_iu_errors.log';
