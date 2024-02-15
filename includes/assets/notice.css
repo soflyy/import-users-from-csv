@@ -91,6 +91,16 @@
     width: 18%
 }
 
+#image-31-2991231 {
+    left: 7px;
+    position: relative;
+}
+
+#image-28-2991231 {
+    right: 5px;
+    position: relative;
+}
+
 @media(max-width:991px) {
     #div_block-158-10 {
         width: 100%;
