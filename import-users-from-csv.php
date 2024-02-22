@@ -1,31 +1,13 @@
 <?php
 /*
 Plugin Name: Import Users from CSV
-Plugin URI: http://wordpress.org/extend/plugins/import-users-from-csv/
+Plugin URI: https://wordpress.org/plugins/import-users-from-csv/
 Description: Import Users data and metadata from a csv file.
-Version: 1.1
-Author: Andrew Lima
-Author URI: https://andrewlima.co.za
+Version: 1.2
+Author: WP All Import
+Author URI: https://www.wpallimport.com/
 License: GPL2
 Text Domain: import-users-from-csv
-*/
-
-/*
- * Copyright 2011  Ulrich Sossou  (https://github.com/sorich87)
- * Copyright 2018  Andrew Lima  (https://github.com/andrewlimaza/import-users-from-csv)
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License, version 2, as
- * published by the Free Software Foundation.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 */
 
 /**
@@ -52,9 +34,11 @@ class IS_IU_Import_Users {
 	 *
 	 * @since 0.1
 	 **/
+	
 	public static function init() {
 		add_action( 'admin_menu', array( __CLASS__, 'add_admin_pages' ) );
 		add_action( 'init', array( __CLASS__, 'process_csv' ) );
+		add_action( 'admin_enqueue_scripts', array( __CLASS__, 'enqueue_assets' ) );
 
 		$upload_dir = wp_upload_dir();
 		self::$log_dir_path = trailingslashit( $upload_dir['basedir'] );
@@ -66,6 +50,13 @@ class IS_IU_Import_Users {
 
 		do_action('is_iu_after_init');
 	}
+
+	public static function enqueue_assets($hook) {
+        if( 'users_page_import-users-from-csv' !== $hook ) {
+            return;
+        }
+        wp_enqueue_style( 'import-users-from-csv-css', plugin_dir_url( __FILE__ ) . 'includes/assets/notice.css' );
+    }
 
 	/**
 	 * Add administration menus
@@ -127,7 +118,7 @@ class IS_IU_Import_Users {
 		?>
 
 		<div class="wrap">
-			<h2><?php _e( 'Import users from a CSV file' , 'import-users-from-csv'); ?></h2>
+			<h2><?php _e( 'Import Users from CSV' , 'import-users-from-csv'); ?></h2>
 			<?php
 				$error_log_file = self::$log_dir_path . 'is_iu_errors.log';
 				$error_log_url  = self::$log_dir_url . 'is_iu_errors.log';
@@ -179,7 +170,7 @@ class IS_IU_Import_Users {
 
 				<?php do_action('is_iu_import_page_before_table'); ?>
 
-				<table class="form-table widefat wp-list-table" style='padding: 5px;'>
+				<table class="form-table widefat wp-list-table">
 					<?php do_action('is_iu_import_page_inside_table_top'); ?>
 					<tr valign="top">
 						<td scope="row">
@@ -224,20 +215,26 @@ class IS_IU_Import_Users {
 									<?php _e( 'Update user when a username or email exists', 'import-users-from-csv' ) ;?>
 								</label>
 							</fieldset>
+						</td>					
+					</tr>
+					<tr valign="top">
+						<td scope="row">
+							<p class="submit">
+							 	<input type="submit" class="button-primary" value="<?php _e( 'Import' , 'import-users-from-csv'); ?>" />
+							</p>
 						</td>
 					</tr>
-
 					<?php do_action('is_iu_import_page_inside_table_bottom'); ?>
 
 				</table>
 
 				<?php do_action('is_iu_import_page_after_table'); ?>
-
-				<p class="submit">
-				 	<input type="submit" class="button-primary" value="<?php _e( 'Import' , 'import-users-from-csv'); ?>" />
-				</p>
 			</form>
+		</div>
 		<?php
+
+		include 'includes/notice.php';
+
 	}
 
 	/**
