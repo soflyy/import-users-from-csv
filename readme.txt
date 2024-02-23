@@ -99,6 +99,7 @@ Thanks to Ulrich Sossou for initially creating this plugin. Be sure to [check ou
 = 1.2 =
 * BUG FIX: Ensure user running import has the ability to add users
 * Update tested to
+* minor UI update
 
 = 1.1 =
 * ENHANCEMENT: Added support for WPCLI (@mircobabini)
