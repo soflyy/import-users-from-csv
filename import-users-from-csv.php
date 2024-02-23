@@ -76,6 +76,9 @@ class IS_IU_Import_Users {
 		if ( isset( $_POST['_wpnonce-is-iu-import-users-users-page_import'] ) ) {
 			check_admin_referer( 'is-iu-import-users-users-page_import', '_wpnonce-is-iu-import-users-users-page_import' );
 
+            if(!current_user_can( 'create_users' )) {
+                die();
+            }
 			if ( !empty( $_FILES['users_csv']['tmp_name'] ) ) {
 				/* Setup settings variables */
 				$filename              = sanitize_text_field( $_FILES['users_csv']['tmp_name'] );
