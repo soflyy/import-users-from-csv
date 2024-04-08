@@ -3,7 +3,7 @@
 Plugin Name: Import Users from CSV
 Plugin URI: https://wordpress.org/plugins/import-users-from-csv/
 Description: Import Users data and metadata from a csv file.
-Version: 1.2
+Version: 1.3
 Author: WP All Import
 Author URI: https://www.wpallimport.com/
 License: GPL2
@@ -422,7 +422,9 @@ class IS_IU_Import_Users {
 					/* If no error, let's update the user meta too! */
 					if ( $usermeta ) {
 						foreach ( $usermeta as $metakey => $metavalue ) {
-							$metavalue = maybe_unserialize( $metavalue );
+                            if(is_serialized($metavalue)){
+                               $metavalue = unserialize(trim($metavalue), ['allowed_classes' => false]);
+                            }
 							update_user_meta( $user_id, $metakey, $metavalue );
 						}
 					}
