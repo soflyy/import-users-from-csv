@@ -4,7 +4,7 @@ Tags: import users from csv, import users, import csv, users, csv
 Requires at least: 3.1
 Requires PHP: 7.0
 Tested up to: 6.4.2
-Stable tag: 1.3
+Stable tag: 1.3.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -95,6 +95,9 @@ Thanks to Ulrich Sossou for initially creating this plugin. Be sure to [check ou
 1. User import screen
 
 == Changelog ==
+
+= 1.3.1 =
+* bug fix: restore missing notice file
 
 = 1.3 =
 * bug fix: don't instantiate serialized objects
