@@ -3,7 +3,7 @@ Contributors: soflyy, wpallimport, sorich87, andrewza, paidmembershipspro
 Tags: import users from csv, import users, import csv, users, csv
 Requires at least: 3.1
 Requires PHP: 7.0
-Tested up to: 6.4.2
+Tested up to: 6.7
 Stable tag: 1.3.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
